@@ -9,13 +9,27 @@
       <!-- 1 - Chiedi all'utente la sua email, controlla che sia nella lista di chi può accedere, stampa un messaggio appropriato -->
       <script>
 
+        var array = ["luca@gmail.com", "marco@gmail.com","giovanni@gmail.com","mario@gmail.com","francesco@gmail.com"]
+        var email = prompt("inserisci la tua email");
+
+        for (var i = 0; i < array.length; i++) {
+
+          var elem = array[i];
+
+          if (elem == email) {
+            console.log("benvenuto", email);
+          } else {
+            console.log('accesso negato');
+          }
+        }
+
       </script>
 
 
 
 
       <!-- 2 - Generare un numero random da 1 a 6, sia per il giocatore sia per il compute. Stabilire il vincitore, in base a chi fa il punteggio più alto. -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
 
       var player = Math.ceil(Math.random() * 6);
       var pc = Math.ceil(Math.random() * 6);
@@ -29,7 +43,7 @@
       }
 
       console.log(player, pc);
-    </script>
+    </script> -->
 
   </body>
 </html>
