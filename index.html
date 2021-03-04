@@ -11,16 +11,21 @@
 
         var array = ["luca@gmail.com", "marco@gmail.com","giovanni@gmail.com","mario@gmail.com","francesco@gmail.com"]
         var email = prompt("inserisci la tua email");
+        var risposta = false;
 
         for (var i = 0; i < array.length; i++) {
 
           var elem = array[i];
 
           if (elem == email) {
-            console.log("benvenuto", email);
-          } else {
-            console.log('accesso negato');
+            risposta = true;
           }
+        }
+
+        if (risposta) {
+          console.log('benvenuto '+email);
+        }else {
+          console.log('accesso negato');
         }
 
       </script>
